@@ -1,28 +1,45 @@
-# Calendar-App
+# DayPlanner-App
 
- Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Created a simple day planner application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. This app also uses localStorage to save the events in browser and remove events individually. 
+
+![](expl_planner.png)
 
 ### Author: Bisraddesign (Brad Thompson)
 
-## Installation
+## Acceptance Criteria:
 
-Use to install Bootstrap
+- GIVEN I am using a daily planner to create a schedule
+- WHEN I open the planner
+- THEN the current day is displayed at the top of the calendar
+- WHEN I scroll down
+- THEN I am presented with timeblocks for standard business hours
+- WHEN I view the timeblocks for that day
+- THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+- WHEN I click into a timeblock
+- THEN I can enter an event
+- WHEN I click the save button for that timeblock
+- THEN the text for that event is saved in local storage
+- WHEN I refresh the page
+- THEN the saved events persist
 
-```Responsive Meta tag
-# <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-```
+## Programming 
 
-```bash
-# Via npm
-npm install bootstrap
+Utilized Bootstrap4, Jquery, Html, css, and moment.js
 
-# Via gem
-gem install bootstrap -v 4.5.2
-```
+- <https://getbootstrap.com/>
+- <https://bootswatch.com/>
+- <https://momentjs.com/>
 
-```Css import
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-```
+## Deployment Link
 
-## Contributing
-Pull requests are welcome. Feedback and comments will be considered in optimizing and creating an effective layout for long term use 
+<https://bisrad.github.io/Day_Planner-app/>
+
+## Credits:
+
+- Andrew Moses | provided insight into moment.js and localStorage usibility 
+- Joey Jepson  | provided a basic template to accelerate my developement process 
+
+## Rescorces:
+
+- StackOverflow | for further examples of JS time and localStorge Uses. Also helped in understanding addClass 
+                  issues and key removal.
