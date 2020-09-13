@@ -25,10 +25,11 @@
 
     <!-- start header area -->
 
-  <div class="container">
-    <div class="flex-center flex-column hero">
+  <div class="container hero">
+    <div class="flex-center flex-column">
       <h1>Daily Planner</h1>
-      <p class="lead">A simple work day planner for everyday use</p>
+      <p class="lead">Create better habits using this daily planner to organize your work day</p>
+      <p id="currentDay" class="lead"></p>
     </div>
   </div>
 
@@ -41,92 +42,125 @@
       <thead>
         <tr>
           <th scope="col" class="time-header">Time</th>
-          <th scope="col" class="calendar-text-header">Make some plans</th>
+          <th scope="col" class="calendar-text-header">What do you have to do today?</th>
           <th scope="col" class="saveBtn-header">Set it</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th scope="row" class="time-9">9:00 AM</th>
+          <th scope="row" class="time">9:00 AM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-9" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-1" data-hour="9" rows="2" placeholder="  enter task"></textarea>
           </td>
           <td>
-            <i class="fas fa-calendar-plus fa-3x saveBtn" id="saveBtn"></i>
+            <i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn clearItem"></i>
           </td>
         </tr>
         <tr>
-          <th scope="row" class="time-10">10:00 AM</th>
+          <th scope="row" class="time">10:00 AM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-10" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-2" data-hour="10" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-11">11:00 AM</th>
+          <th scope="row" class="time">11:00 AM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-11" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-3" data-hour="11" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-12">12:00 PM</th>
+          <th scope="row" class="time">12:00 PM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-12" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-4" data-hour="12" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-1">1:00 PM</th>
+          <th scope="row" class="time">1:00 PM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-1" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-5" data-hour="1" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-2">2:00 PM</th>
+          <th scope="row" class="time">2:00 PM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-2" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-6" data-hour="2" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-3">3:00 PM</th>
+          <th scope="row" class="time">3:00 PM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-3" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-7" data-hour="3" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-4">4:00 PM</th>
+          <th scope="row" class="time">4:00 PM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-4" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-8" data-hour="4" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
         <tr>
-          <th scope="row" class="time-5">5:00 PM</th>
+          <th scope="row" class="time">5:00 PM</th>
           <td class="calendar-event">
-            <textarea class="calendar-text" id="text-5" rows="2"></textarea>
+            <textarea contenteditable="true" class="calendar-text" id="input-9" data-hour="5" rows="2" placeholder="  enter task"></textarea>
           </td>
-          <td><i class="fas fa-calendar-plus fa-3x saveBtn"></i></td>
+          <td><i class="fas fa-calendar-plus fa-1x saveBtn py-2 px-2" id="saveBtn"></i>
+            <i class="fas fa-trash-alt fa-1x clearBtn py-2 px-2" id="clearBtn"></i>
+          </td>
         </tr>
       </tbody>
     </table>
-    <div class="button">
-      <i class="fas fa-trash-alt fa-4x clearBtn " id="clearBtn" hidden></i>
-    </div>
   </div>
-
-
-
 
   <!-- end scheduler table -->
 
-    <!-- jQuery first, popper.js, then Bootstrap JS -->
+      <!-- Footer Area -->
+
+      <footer class="footer-area">
+        <div class="footer-container">
+            <div class="">
+                <div class="site-logo text-center py-3">
+                    <a href="#"><img src="./img/logo.png" class="logo" alt="logo"></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p>
+                        Copyright ©2020 All rights reserved | This template is made with bootstrap by
+                        <a href="#"><span style="color: var(--primary-color);">Bisrad Design</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- End Footer Area -->
+
+    <!-- jQuery,  then Bootstrap JS -->
     <script src="js/jquery.3.5.1.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
+    <script src="js/script.js" type="text/javascript"></script>
+    <!-- Moment.js link -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
   </body>
 </html>
 
