@@ -2,7 +2,7 @@
 
 Created a simple day planner application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. This app also uses localStorage to save the events in browser and remove events individually. 
 
-![](expl_planner.png)
+![](expl_planner2.png)
 
 ### Author: Bisraddesign (Brad Thompson)
 
