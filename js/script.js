@@ -12,13 +12,13 @@ $(document).ready(() => {
   let currentTime = moment().hour();
   //   console.log(currentTime);
 
-  // function that takes input and saves to localStorage
+  // function that takes input and saves to sessionStorage
 
   $(".calendar-text").each(function () {
     // console.log($(this))
     let eleId = $(this).attr("id");
     // console.log(eleId)
-    let localVal = localStorage.getItem(eleId);
+    let localVal = sessionStorage.getItem(eleId);
     // console.log(localVal)
     if (localVal !== null) {
       $(this).val(localVal);
@@ -56,9 +56,9 @@ $(document).ready(() => {
       .children(".calendar-text")
       .attr("id");
 
-    // add extra class to be remove later in localstorage
+    // add extra class to be remove later in sessionStorage
     // console.log(eleId)
-    localStorage.setItem(eleId, saveUserInput);
+    sessionStorage.setItem(eleId, saveUserInput);
     });
 
   // function that refreshes page
@@ -68,7 +68,7 @@ $(document).ready(() => {
   // function that clears data on click
   // look into randomClass to remove specific item from local storage
   $(".clearBtn").on("click", () => {
-    window.localStorage.clear("input");
+    window.sessionStorage.clear("input");
     location.reload();
   });
 });
