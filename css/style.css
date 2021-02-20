@@ -65,9 +65,8 @@ h1 {
 
 [contenteditable="true"] {
   border: 1px solid #ddd;
-  padding: 1.4rem 0 0 .8rem;
-  border-radius: 15px;
-  box-shadow: inset 0 -10px 6px -8px rgba(149, 149, 149, 0.511);
+  padding: 1rem 0 0 1rem;
+  border-radius: 5px;
 }
 
 [contenteditable="true"]:focus {
